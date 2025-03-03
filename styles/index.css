@@ -1,3 +1,5 @@
+/* General */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,6 +12,8 @@
     --sage: #a0a083ff;
     --paynes-gray: #4d6a6dff;
 }
+
+/* Header */
 
 header {
     background-color: var(--paynes-gray);
@@ -30,14 +34,15 @@ header img {
     border-radius: 10px;
 }
 
+/* Nav */
+
 nav {
     width: 100%;
-    padding: 20px;
     background-color: var(--pearl);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 a {
@@ -45,11 +50,111 @@ a {
     font-weight: bolder;
     color: var(--paynes-gray);
     font-size: 30px;
-    margin: 50px;
     padding: 20px;
 }
 
 a:hover {
     color: var(--pearl);
     background-color: var(--paynes-gray);
+}
+
+/* Main */
+
+main h2 {
+    color: var(--paynes-gray);
+    font-size: 30px;
+    padding: 10px;
+}
+
+.home-sections {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.home-sections section {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--paynes-gray);
+    margin: 30px;
+    border-radius: 10px;
+    padding: 0 0 10px 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.section-list h2, .section-image h2,
+.web-certificate h2 {
+    background-color: var(--paynes-gray);
+    color: var(--pearl);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-list ul {
+    padding: 30px;
+}
+
+.section-image {
+    text-align: center;
+}
+
+.web-certificate {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 0 0 10px 0;
+    border: 1px solid var(--paynes-gray);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.certificates {
+    display: inherit;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--paynes-gray);
+}
+
+.certificates section {
+    background-color: var(--pearl);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--paynes-gray);
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 20px;
+}
+
+.courses section {
+    background-color: var(--paynes-gray);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--pearl);
+}
+
+.courses section:nth-child(even) {
+    background-color: var(--sage);
+    color: var(--pearl);
+}
+
+footer {
+    background-color: var(--paynes-gray);
+    text-align: center;
+    color: var(--pearl);
+    font-size: 20px;
+    padding: 20px;
 }
