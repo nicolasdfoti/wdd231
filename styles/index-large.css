@@ -1,0 +1,72 @@
+@media screen and (min-width: 1000px) {
+    
+    /* Header */
+
+    header {
+        background-color: var(--paynes-gray);
+        padding: 0;
+        color: white;
+    }
+
+    header img {
+        margin-top: 10px;
+    }
+
+    /* Nav */
+
+    nav {
+        width: 100%;
+        background-color: var(--pearl);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: bolder;
+        color: var(--paynes-gray);
+        font-size: 30px;
+        padding: 20px;
+    }
+    
+    a:hover {
+        color: var(--pearl);
+        background-color: var(--paynes-gray);
+    }
+
+    /* Main */
+
+    .home-sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .home-sections section {
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--paynes-gray);
+        margin: 30px;
+        border-radius: 10px;
+        padding: 0 0 10px 0;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .web-certificate {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        padding: 0 0 10px 0;
+        border: 1px solid var(--paynes-gray);
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        padding: 20px;
+    }
+}

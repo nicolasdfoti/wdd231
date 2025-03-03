@@ -17,7 +17,7 @@
 
 header {
     background-color: var(--paynes-gray);
-    padding-top: 10px;
+    padding: 10px;
     color: white;
 }
 
@@ -37,25 +37,7 @@ header img {
 /* Nav */
 
 nav {
-    width: 100%;
-    background-color: var(--pearl);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 10px;
-}
-
-a {
-    text-decoration: none;
-    font-weight: bolder;
-    color: var(--paynes-gray);
-    font-size: 30px;
-    padding: 20px;
-}
-
-a:hover {
-    color: var(--pearl);
-    background-color: var(--paynes-gray);
+    display: none;
 }
 
 /* Main */
@@ -68,17 +50,12 @@ main h2 {
 
 .home-sections {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 .home-sections section {
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--paynes-gray);
-    margin: 30px;
-    border-radius: 10px;
-    padding: 0 0 10px 0;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    margin: 20px;
 }
 
 .section-list h2, .section-image h2,
@@ -86,11 +63,11 @@ main h2 {
     background-color: var(--paynes-gray);
     color: var(--pearl);
     text-align: center;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .section-list ul {
-    padding: 30px;
+    padding: 30px 0 0 50px;
 }
 
 .section-image {
@@ -98,17 +75,11 @@ main h2 {
 }
 
 .web-certificate {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    padding: 0 0 10px 0;
-    border: 1px solid var(--paynes-gray);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border: none;
 }
 
 .certificates {
-    display: inherit;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
@@ -130,7 +101,7 @@ main h2 {
 
 .courses {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     padding: 20px;
 }
