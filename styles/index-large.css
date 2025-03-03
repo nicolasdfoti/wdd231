@@ -8,6 +8,10 @@
         color: white;
     }
 
+    header button {
+        display: none;
+    }
+
     header img {
         margin-top: 10px;
     }
@@ -24,6 +28,7 @@
     }
 
     a {
+        display: inline;
         text-decoration: none;
         font-weight: bolder;
         color: var(--paynes-gray);
