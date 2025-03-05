@@ -24,6 +24,7 @@ header {
 
 header div {
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     gap: 20px;
