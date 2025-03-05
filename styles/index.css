@@ -124,7 +124,6 @@ main h1 {
     margin: 20px;
 }
 
-
 .certificates {
     display: flex;
     flex-direction: row;
@@ -134,10 +133,12 @@ main h1 {
     border-bottom: 1px solid var(--paynes-gray);
 }
 
-.certificates section {
+.certificates button {
+    cursor: pointer;
     background-color: var(--pearl);
     margin: 10px;
     padding: 20px;
+    border: none;
     border-radius: 10px;
     width: 20%;
     text-align: center;

@@ -89,4 +89,24 @@
         justify-content: center;
         padding: 20px;
     }
+
+    .courses section {
+        background-color: var(--paynes-gray);
+        margin: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .courses section:nth-child(even) {
+        background-color: var(--sage);
+        color: rgba(0, 0, 0, 0.667);
+    }
+    
+    .courses section p {
+        display: flex;
+    }
 }
