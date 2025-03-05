@@ -58,12 +58,6 @@ a {
     padding: 20px;
 }
 
-.open a:hover {
-    color: var(--paynes-gray);
-    font-weight: bold;
-    background-color: var(--pearl);
-}
-
 #menu {
     padding: 10px;
     right: 10px;
