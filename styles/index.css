@@ -16,15 +16,13 @@
 /* Header */
 
 header {
-    display: block;
     background-color: var(--paynes-gray);
     padding: 10px;
     color: white;
 }
 
-header div {
+#top-menu {
     display: flex;
-    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -66,8 +64,6 @@ a {
 
 #menu {
     padding: 10px;
-    right: 10px;
-    position: absolute;
 }
 
 #menu::before {
