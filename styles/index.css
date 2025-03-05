@@ -73,6 +73,12 @@ a {
     content: "☰ ";
 }
 
+nav a.active {
+    color: var(--pearl);
+    background-color: var(--paynes-gray);
+    font-weight: bold;
+}
+
 /* Main */
 
 main h1 {
