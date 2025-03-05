@@ -16,7 +16,7 @@
 /* Header */
 
 header {
-    display: reverse-inline;
+    display: block;
     background-color: var(--paynes-gray);
     padding: 10px;
     color: white;
@@ -56,6 +56,11 @@ a {
     text-align: right;
     font-size: 20px;
     padding: 20px;
+}
+
+.open a:hover {
+    background-color: var(--pearl);
+    color: var(--paynes-gray);
 }
 
 #menu {
