@@ -29,6 +29,11 @@ header div {
     gap: 20px;
 }
 
+header div span {
+    color: white;
+    font-size: 40px;
+}
+
 header img {
     width: 200px;
     border: solid 1px var(--pearl);
