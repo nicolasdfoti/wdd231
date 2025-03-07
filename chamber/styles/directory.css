@@ -53,6 +53,11 @@ a:hover, a:active {
 }
 
 /* Main */
+
+#main-section {
+    display: flex;
+    flex-direction: column-reverse;
+}
     
 #hero-image {
     position: relative;
