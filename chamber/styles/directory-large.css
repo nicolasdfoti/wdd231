@@ -1,0 +1,52 @@
+@media screen and (min-width: 1000px) {
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Cardo", "serif";
+    }
+    
+    :root {
+        --silver: #c5c5c5ff;
+        --outer-space: #4c5b61ff;
+        --battleship-gray: #829191ff;
+        --battleship-gray-2: #949b96ff;
+        --dark-slate-gray: #2c423fff;
+    }
+
+    /* Header */
+
+    header {
+        background-color: var(--silver);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
+
+    /* Main */
+
+    #hero-image button {
+        padding: 20px;
+        font-size: 20px;
+    }
+    
+    .home-sections {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin-top: 20px;
+    }
+
+    .business-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}

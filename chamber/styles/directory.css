@@ -1,0 +1,153 @@
+/* General */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cardo", "serif";
+}
+
+:root {
+    --silver: #c5c5c5ff;
+    --outer-space: #4c5b61ff;
+    --battleship-gray: #829191ff;
+    --battleship-gray-2: #949b96ff;
+    --dark-slate-gray: #2c423fff;
+}
+
+/* Header */
+
+header {
+    background-color: var(--silver);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#header-div h1 {
+    font-size: 30px;
+    color: var(--dark-slate-gray);
+    font-weight: bold;
+}
+
+#header-div p {
+    font-size: 20px;
+}
+
+nav {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-slate-gray);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+a:hover, a:active {
+    background-color: var(--dark-slate-gray);
+    color: var(--silver);
+}
+
+/* Main */
+    
+#hero-image {
+    position: relative;
+}
+
+#hero-image img {
+    opacity: 0.6;
+    width: 100%;
+    z-index: 0;
+    height: auto;
+}
+
+#hero-image button {
+    cursor: pointer;
+    z-index: 1;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bolder;
+    color: var(--silver);
+    background-color: var(--dark-slate-gray);
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+}
+
+#hero-image button:hover {
+    background-color: var(--silver);
+    color: var(--dark-slate-gray);
+}
+
+a:hover, a:active {
+    background-color: var(--dark-slate-gray);
+    color: var(--silver);
+}
+
+.home-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.home-sections section {
+    background-color: var(--battleship-gray-2);
+    margin: 10px 10px 20px 10px;
+    height: 200px;
+}
+
+.home-sections h2 {
+    background-color: var(--dark-slate-gray);
+    color: var(--silver);
+    padding: 10px;
+}
+
+.business-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 20px;
+}
+
+.business-card section {
+    margin: 20px;
+}
+
+.card {
+    background-color: var(--battleship-gray-2);
+    padding: 30px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.main-info {
+    text-align: center;
+    border-bottom: 0.5px solid var(--dark-slate-gray);
+    padding-bottom: 10px;
+}
+
+.information {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+}
+
+span {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--silver);
+    padding: 10px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
