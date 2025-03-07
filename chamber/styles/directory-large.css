@@ -25,6 +25,10 @@
         padding: 20px;
     }
 
+    nav {
+        display: flex;
+    }
+
     /* Main */
 
     #hero-image button {
