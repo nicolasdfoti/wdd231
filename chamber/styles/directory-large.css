@@ -20,13 +20,16 @@
     header {
         background-color: var(--silver);
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
+        position: relative;
         padding: 20px;
     }
 
     nav {
         display: flex;
+        position: absolute;
+        right: 10px;
     }
 
     /* Main */
