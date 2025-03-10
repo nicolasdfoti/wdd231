@@ -30,12 +30,15 @@ header img {
     height: 70px;
     border: 2px solid var(--battleship-gray-2);
     margin-right: 5px;
+    align-self: center;
+    justify-self: center;
 }
 
 #header-div {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-self: center;
+    text-wrap: wrap;
 }
 
 #header-div h1 {
@@ -63,6 +66,24 @@ a {
 a:hover, a:active {
     background-color: var(--dark-slate-gray);
     color: var(--silver);
+}
+
+#header-button {
+    align-self: center;
+}
+
+.open {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.open a {
+    text-align: right;
+}
+
+#header-button img {
+    width: 30px;
+    height: auto;
 }
 
 /* Main */
@@ -124,21 +145,43 @@ a:hover, a:active {
     padding: 10px;
 }
 
+#buttons {
+    text-align: center;
+}
+
+button {
+    border: none;
+}
+
+#buttons img {
+    width: 30px;
+    height: auto;
+}
+
 .business-cards {
-    display: grid;
-    grid-template-columns: 1fr;
     justify-items: center;
     gap: 20px;
 }
 
-.business-card section {
+.business-cards section {
     margin: 20px;
 }
 
+.grid-view {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.flex-view {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .card {
-    background-color: var(--battleship-gray-2);
-    padding: 30px;
-    width: 90%;
+    background-color: var(--silver);
+    padding: 20px;
+    margin: 10px auto;
+    width: 95%;
     border-radius: 10px;
 }
 
@@ -151,7 +194,18 @@ a:hover, a:active {
 .information {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 20px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.imageDiv {
+    justify-self: center;
+    align-self: center;
+}
+
+.imageDiv img {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 span {

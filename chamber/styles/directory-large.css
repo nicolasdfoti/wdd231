@@ -30,10 +30,18 @@
         z-index: 3;
     }
 
+    #header-button {
+        display: none;
+    }
+
     nav {
         display: flex;
         position: absolute;
         right: 10px;
+    }
+
+    .open {
+        display: flex;
     }
 
     /* Main */
@@ -62,6 +70,16 @@
         grid-template-columns: 1fr 1fr 1fr;
         justify-items: center;
         margin-bottom: 40px;
+    }
+
+    .flex-view {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     footer {
