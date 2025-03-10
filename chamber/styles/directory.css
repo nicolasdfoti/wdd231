@@ -20,7 +20,6 @@
 header {
     background-color: var(--silver);
     display: flex;
-    justify-items: space-evenly;
     padding: 20px;
     width: 100%;
     border-bottom: 5px solid var(--dark-slate-gray);
@@ -90,7 +89,7 @@ a:hover, a:active {
     padding: 10px;
     font-size: 15px;
     font-weight: bolder;
-    color: var(--silver);
+    color: white;
     background-color: var(--dark-slate-gray);
     position: absolute;
     bottom: 20px;
