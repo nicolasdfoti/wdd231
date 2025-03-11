@@ -164,6 +164,8 @@ a:hover, a:active {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10px;
+    font-size: 20px;
+    align-items: center;
 }
 
 #weather-image img {
@@ -209,7 +211,8 @@ a:hover, a:active {
 }
 
 .card {
-    background-color: var(--silver);
+    background-color: var(--battleship-gray-2);
+    border: 3px solid var(--dark-slate-gray);
     padding: 20px;
     margin: 10px auto;
     width: 95%;
