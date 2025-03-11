@@ -40,7 +40,7 @@
             </nav>
 
             <div id="header-button">
-                <button id="hamButton"><img src="images/menu.png" alt=""></button>
+                <button id="hamButton"><img src="images/menu.png" alt="">Menu</button>
             </div>
 
         </header>
@@ -70,20 +70,24 @@
 
                     <h2>Current Weather</h2>
 
-                    <div>
+                    <div id="weather-section">
 
-                        <img src="" alt="">
+                        <div id="weather-image">
 
-                    </div>
+                            <img src="images/weather.png" alt="">
 
-                    <div>
-                        <p id="weather"><span></span></p>
-                        <p id="sunny"></p>
-                        <p id="high"></p>
-                        <p id="low"></p>
-                        <p id="humidity"></p>
-                        <p id="sunrise"></p>
-                        <p id="sunset"></p>
+                        </div>
+
+                        <div id="weather-info">
+                            <p><span>17°C</span></p>
+                            <p>Very sunny</p>
+                            <p>High: 85°</p>
+                            <p>Low: 52°</p>
+                            <p>Humidity: 34%</p>
+                            <p>Sunrise: 6:30 am</p>
+                            <p>Sunset: 20:00 pm</p>
+                        </div>
+
                     </div>
                     
                 </section>
@@ -92,17 +96,21 @@
 
                     <h2>Weather Forecast</h2>
 
-                    <h3 id="today"></h3>
-                    <h3 id="nextday"></h3>
-                    <h3 id="otherday"></h3>
+                    <div id="weather-forecast">
+
+                        <p id="today">Today: <span>17°C</span></p>
+                        <p id="nextday">Tomorrow: <span>20°C</span></p>
+                        <p id="otherday">Wednesday: <span>18°C</span></p>
+
+                    </div>
                     
                 </section>
 
             </div>
 
             <div id="buttons">
-                <button id="grid"><img src="images/grid.png" alt=""></button>
-                <button id="list"><img src="images/list.png" alt=""></button>
+                <button id="grid"><img src="images/grid.png" alt="">Grid Display</button>
+                <button id="list"><img src="images/list.png" alt="">List Display</button>
             </div>
             
 
