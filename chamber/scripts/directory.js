@@ -52,8 +52,8 @@ const displayMembers = (members) => {
         companyImage.setAttribute("src", member.image);
         companyImage.setAttribute("alt", `${member.name} logo`);
         companyImage.setAttribute("loading", "lazy");
-        // companyImage.setAttribute("width", 80);
-        // companyImage.setAttribute("height", 30);
+        companyImage.setAttribute("width", 80);
+        companyImage.setAttribute("height", 30);
 
         emailTag.innerHTML = `<span>Email:</span> ${member.email}`;
         phoneTag.innerHTML = `<span>Phone Number:</span> ${member.phoneNum}`;
