@@ -1,4 +1,4 @@
-// Weather Section
+// Current Weather Section
 const temperature = document.querySelector("#temperature");
 const weather = document.querySelector("#weather");
 const highest = document.querySelector("#highest");
@@ -7,14 +7,16 @@ const humidity = document.querySelector("#humidity");
 const sunrise = document.querySelector("#sunrise");
 const sunset = document.querySelector("#sunset");
 
-const today = document.querySelector("#today");
+// Weather Forecast Section
 const tomorrow = document.querySelector("#tomorrow");
+const nextDay = document.querySelector("#nextday");
 const otherDay = document.querySelector("#otherday");
 
 const icon = document.querySelector("#weather-image");
 
 // Get data from API
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-34.58858385821943&lon=-58.398298709972465&units=metric&appid=bdb8cf37e14a7951b5cb374da1a2da9b';
+const secondUrl = 'https://api.openweathermap.org/data/2.5/forecast?lat=-34.58858385821943&lon=-58.398298709972465&units=metric&appid=0edd4c5a4e799f388484da65c1445a37';
 
 
 async function getWeather() {
@@ -41,6 +43,31 @@ async function getWeather() {
         throw error;
     }
 
+}
+
+async function getForecast() {
+
+    try {
+
+        const response = await fetch(secondUrl);
+
+        if (response.ok) {
+
+            const data = await response.json();
+
+            console.log(data);
+            displayForecast(data);
+        }
+
+        else {
+            throw Error(await response.text());
+        }
+
+    } catch (error) {
+
+        console.log(error);
+        throw error;
+    }
 }
 
 function displayWeather(data) {
@@ -74,8 +101,25 @@ function displayWeather(data) {
     // Icon
     const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     icon.setAttribute("src", weatherIcon);
-    icon.setAttribute("alt", currentWeather)
+    icon.setAttribute("alt", currentWeather);
 
 }
 
-getWeather()
+function displayForecast(data) {
+
+    // Display Tomorrow
+    const tomorrowTemp = data.list[1].main.temp;
+    tomorrow.innerHTML = `<strong>Tomorrow's Temperature:</strong> ${tomorrowTemp}°C`;
+
+    // Display Next Day
+    const nextDayTemp = data.list[2].main.temp;
+    nextDay.innerHTML = `<strong>Next Day's Temperature:</strong> ${nextDayTemp}°C`;
+
+    // Display Other Day
+    const otherDayTemp = data.list[3].main.temp;
+    otherDay.innerHTML = `<strong>3 day's Temperature:</strong> ${otherDayTemp}°C`;
+
+}
+
+getWeather();
+getForecast();
