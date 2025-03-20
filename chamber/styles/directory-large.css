@@ -1,5 +1,7 @@
 @media screen and (min-width: 1000px) {
 
+    /* General */
+
     * {
         padding: 0;
         margin: 0;
@@ -60,9 +62,13 @@
     
     .home-sections {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 0.8fr;
         margin-top: 20px;
         margin-bottom: 40px;
+    }
+
+    #weather-section {
+        padding: 10px;
     }
 
     .business-cards {

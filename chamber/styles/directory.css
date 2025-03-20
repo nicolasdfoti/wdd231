@@ -15,6 +15,8 @@
     --dark-slate-gray: #2c423fff;
 }
 
+/* General */
+
 button {
     border: none;
     display: flex;
@@ -31,6 +33,7 @@ button {
 header {
     background-color: var(--silver);
     display: flex;
+    justify-content: space-between;
     padding: 20px;
     width: 100%;
     border-bottom: 5px solid var(--dark-slate-gray);
@@ -43,6 +46,10 @@ header img {
     margin-right: 5px;
     align-self: center;
     justify-self: center;
+}
+
+#first-header-div {
+    display: flex;
 }
 
 #header-div {
@@ -163,14 +170,22 @@ a:hover, a:active {
 #weather-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 10px;
     padding: 10px;
     font-size: 20px;
     align-items: center;
+    justify-items: center;
+}
+
+#weather-section p {
+    padding: 5px;
 }
 
 #weather-image img {
-    width: 90%;
+    width: 180px;
     padding: 10px;
+    align-self: center;
+    justify-self: center;
 }
 
 #weather-forecast, #weather-forecast span {
