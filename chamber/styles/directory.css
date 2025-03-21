@@ -200,7 +200,6 @@ a:hover, a:active {
 #weather-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     align-self: center;
     justify-self: center;
 }
@@ -212,7 +211,7 @@ a:hover, a:active {
     font-size: 20px;
 }
 
-#weather-forecast p{
+#weather-forecast p {
     padding: 5px;
 }
 
@@ -231,7 +230,7 @@ a:hover, a:active {
 }
 
 #buttons button img {
-    width: 30px;
+    width: 100%;
     height: auto;
 }
 
@@ -304,7 +303,7 @@ span {
 }
 
 .spotlight-members img {
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
