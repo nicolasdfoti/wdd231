@@ -1,3 +1,8 @@
+// Last Modified
+
+const lastModified = document.querySelector("#lastModified");
+lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
+
 // Current Weather Section
 const temperature = document.querySelector("#temperature");
 const weather = document.querySelector("#weather");
@@ -95,8 +100,11 @@ function displayWeather(data) {
     const currentSunrise = data.sys.sunrise;
     const currentSunset = data.sys.sunset;
 
-    sunrise.innerHTML = `<strong>Sunrise:</strong> ${currentSunrise}`;
-    sunset.innerHTML = `Sunset: ${currentSunset}`;
+    const sunriseTime = new Date(currentSunrise * 1000).toLocaleTimeString();
+    const sunsetTime = new Date(currentSunset * 1000).toLocaleTimeString();
+
+    sunrise.innerHTML = `<strong>Sunrise:</strong> ${sunriseTime}`;
+    sunset.innerHTML = `<strong>Sunset:</strong> ${sunsetTime}`;
 
     // Icon
     const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
@@ -121,5 +129,98 @@ function displayForecast(data) {
 
 }
 
+
+
+// Spotlight members
+
+const spotlight = document.querySelector(".spotlight-members");
+const membersUrl = 'data/members.json';
+
+async function getSpotlightMembers() {
+
+    const response = await fetch(membersUrl);
+
+    if (response.ok) {
+
+        const data = await response.json();
+        displaySpotlight(data);
+    }
+
+    else {
+        console.log("Error here!");
+    }
+
+}
+
+function displaySpotlight(data) {
+
+    const spotlightMembers = data.members.filter(member => member.membershipLabel === 1 ||
+        member.membershipLabel === 2);
+
+    const shuffledMembers = spotlightMembers.sort(() => Math.random() - 0.5);
+    const selectedMembers = shuffledMembers.slice(0, 3);
+
+    spotlight.innerHTML = "";
+
+    selectedMembers.forEach(member => {
+
+        // Creating HTML tags
+        
+        const memberCard = document.createElement("section");
+        memberCard.classList.add("card");
+
+        const mainInfo = document.createElement("div");
+        mainInfo.classList.add("main-info");
+        const fullName = document.createElement("h2");
+
+        const information = document.createElement("div");
+        information.classList.add("information");
+
+        const imageDiv = document.createElement("div");
+        imageDiv.classList.add("imageDiv");
+        const companyImage = document.createElement("img");
+
+        const generalInfo = document.createElement("div");
+        generalInfo.classList.add("general-information");
+        const emailTag = document.createElement("p");
+        const phoneTag = document.createElement("p");
+        const urlTag = document.createElement("p");
+        const addressTag = document.createElement("p");
+
+        // Inserting Data
+        fullName.innerHTML = member.name;
+
+        companyImage.setAttribute("src", member.image);
+        companyImage.setAttribute("alt", `${member.name} logo`);
+        companyImage.setAttribute("loading", "lazy");
+        companyImage.setAttribute("width", 80);
+        companyImage.setAttribute("height", 30);
+
+        emailTag.innerHTML = `<span>Email:</span> ${member.email}`;
+        phoneTag.innerHTML = `<span>Phone Number:</span> ${member.phoneNum}`;
+        urlTag.innerHTML = `<span>Website:</span> ${member.website}`;
+        addressTag.innerHTML = `<span>Address:</span> ${member.address}`;
+
+        mainInfo.appendChild(fullName);
+
+        imageDiv.appendChild(companyImage);
+
+        generalInfo.appendChild(emailTag);
+        generalInfo.appendChild(phoneTag);
+        generalInfo.appendChild(urlTag);
+        generalInfo.appendChild(addressTag);
+
+        information.appendChild(imageDiv);
+        information.appendChild(generalInfo);
+
+        memberCard.appendChild(mainInfo);
+        memberCard.appendChild(information);
+
+        spotlight.appendChild(memberCard);
+
+    });
+}
+
 getWeather();
 getForecast();
+getSpotlightMembers();

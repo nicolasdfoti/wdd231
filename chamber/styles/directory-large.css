@@ -88,6 +88,11 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .spotlight-members {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

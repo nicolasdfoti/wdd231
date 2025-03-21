@@ -109,6 +109,8 @@ a:hover, a:active {
 
 /* Main */
 
+/* Hero section */
+
 #main-section {
     display: flex;
     flex-direction: column-reverse;
@@ -149,6 +151,8 @@ a:hover, a:active {
     color: var(--silver);
 }
 
+/* Home Sections */
+
 .home-sections {
     display: grid;
     grid-template-columns: 1fr;
@@ -167,6 +171,8 @@ a:hover, a:active {
     padding: 10px;
 }
 
+/* Weather Section */
+
 #weather-section {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -181,13 +187,15 @@ a:hover, a:active {
     padding: 5px;
 }
 
-#weather-image {
+#weather-image img {
     width: 200px;
     height: 200px;
     object-fit: cover;
     align-self: center;
     justify-self: center;
 }
+
+/* Weather Forecast Section */
 
 #weather-forecast, #weather-forecast span {
     padding: 20px;
@@ -198,6 +206,8 @@ a:hover, a:active {
     padding: 5px;
 }
 
+/* Buttons: Grid and Flex */
+
 #buttons {
     text-align: center;
     font-size: 20px;
@@ -206,10 +216,16 @@ a:hover, a:active {
     gap: 20px;
 }
 
+#buttons button {
+    cursor: pointer;
+}
+
 #buttons button img {
     width: 30px;
     height: auto;
 }
+
+/* Business Cards */
 
 .business-cards {
     justify-items: center;
@@ -242,7 +258,10 @@ a:hover, a:active {
 .main-info {
     text-align: center;
     border-bottom: 0.5px solid var(--dark-slate-gray);
-    padding-bottom: 10px;
+}
+
+.information p {
+    padding: 5px;
 }
 
 .information {
@@ -267,6 +286,16 @@ a:hover, a:active {
 span {
     font-weight: bolder;
     font-size: 18px;
+}
+
+.spotlight-members {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.spotlight-members img {
+    width: auto;
+    height: auto;
 }
 
 /* Footer */
