@@ -116,10 +116,10 @@ function displayWeather(data) {
     sunrise.innerHTML = `<strong>Sunrise:</strong> ${sunriseTime}`;
     sunset.innerHTML = `<strong>Sunset:</strong> ${sunsetTime}`;
 
-    // Icon
-    const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
-    icon.setAttribute("src", weatherIcon);
-    icon.setAttribute("alt", currentWeather);
+    // // Icon
+    // const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
+    // icon.setAttribute("src", weatherIcon);
+    // icon.setAttribute("alt", currentWeather);
 
 }
 
