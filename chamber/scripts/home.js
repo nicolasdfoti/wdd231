@@ -3,6 +3,16 @@
 const lastModified = document.querySelector("#lastModified");
 lastModified.innerHTML = `Last Modified: ${document.lastModified}`;
 
+// Toggle buttons
+
+const hamButton = document.querySelector("#hamButton");
+const navigation = document.querySelector("nav");
+
+hamButton.addEventListener("click", () => {
+    hamButton.classList.toggle("open");
+    navigation.classList.toggle("open");
+})
+
 // Current Weather Section
 const temperature = document.querySelector("#temperature");
 const weather = document.querySelector("#weather");
@@ -107,7 +117,7 @@ function displayWeather(data) {
     sunset.innerHTML = `<strong>Sunset:</strong> ${sunsetTime}`;
 
     // Icon
-    const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    const weatherIcon = `https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png`;
     icon.setAttribute("src", weatherIcon);
     icon.setAttribute("alt", currentWeather);
 
@@ -147,7 +157,7 @@ async function getSpotlightMembers() {
     }
 
     else {
-        console.log("Error here!");
+        throw new Error;
     }
 
 }

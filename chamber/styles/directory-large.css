@@ -22,7 +22,7 @@
     header {
         background-color: var(--silver);
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         width: 100%;
         align-items: center;
         padding: 20px;
@@ -37,12 +37,18 @@
     }
 
     nav {
+        width: 350px;
         display: flex;
-        position: absolute;
-        right: 10px;
+        position: relative;
+        background-color: var(--silver);
+        top: 0px;
     }
 
     .open {
+        display: flex;
+    }
+
+    a {
         display: flex;
     }
 
