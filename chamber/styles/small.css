@@ -17,7 +17,7 @@
 
 /* General */
 
-h1, h2 {
+h1 {
     padding-left: 10px;
 }
 
@@ -60,8 +60,7 @@ header img {
     display: flex;
     flex-direction: column;
     align-self: center;
-    padding: 10px;
-    text-wrap: wrap;
+    text-align: left;
 }
 
 #header-div h1 {
@@ -90,6 +89,8 @@ a {
     font-weight: bold;
     font-size: 20px;
     padding: 10px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
 }
 
 a:hover, a:active {
@@ -105,10 +106,6 @@ a:hover, a:active {
 .open {
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.open a {
-    text-align: center;
 }
 
 #header-button img {

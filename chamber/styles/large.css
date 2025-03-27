@@ -38,7 +38,9 @@
 
     nav {
         width: 350px;
+        height: auto;
         display: flex;
+        flex-direction: row;
         position: relative;
         background-color: var(--silver);
         top: 0px;
@@ -50,6 +52,7 @@
 
     a {
         display: flex;
+        transition: 0.3s ease-in-out;
     }
 
     /* Main */
