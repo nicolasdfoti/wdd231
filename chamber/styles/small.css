@@ -305,10 +305,15 @@ span {
 
 /* Join Form */
 
+#main-join {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 form {
     display: grid;
     grid-template-columns: 1fr;
-    width: 60%;
+    width: 95%;
     justify-self: center;
     border: 1px solid var(--dark-slate-gray);
     margin-bottom: 20px;
@@ -369,6 +374,43 @@ form {
         background-color: var(--silver);
         color: var(--dark-slate-gray);
     }
+}
+
+.membership-levels {
+    align-self: center;
+
+    h2 {
+        text-align: center;
+    }
+
+    button {
+        align-self: center;
+        text-align: center;
+        background-color: var(--outer-space);
+        color: white;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: var(--dark-slate-gray);
+    }
+}
+
+.membership-levels section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--battleship-gray-2);
+    width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+.membership-levels section:nth-child(even) {
+    background-color: var(--silver);
 }
 
 /* Thank You page */

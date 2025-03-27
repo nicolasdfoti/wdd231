@@ -102,6 +102,17 @@
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    /* Join and Form */
+
+    #main-join {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        width: 95%;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
