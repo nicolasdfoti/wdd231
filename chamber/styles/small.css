@@ -371,7 +371,15 @@ form {
     }
 }
 
+/* Thank You page */
 
+#thankyou-info {
+    padding: 10px;
+}
+
+#thankyou-info p {
+    margin-bottom: 20px;
+}
 
 /* Footer */
 
