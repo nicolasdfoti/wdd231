@@ -13,6 +13,24 @@
     --paynes-gray: #4d6a6dff;
 }
 
+@keyframes myTransition {
+    
+    0% {
+        rotate: 0deg;
+        scale: 100%;
+    }
+
+    50% {
+        rotate: 100deg;
+        scale: 10%;
+    }
+
+    100% {
+        rotate: 360deg;
+        scale: 100%;
+    }
+}
+
 /* Header */
 
 header {
@@ -39,6 +57,10 @@ header img {
     border: solid 1px var(--pearl);
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+header img:hover {
+    animation: myTransition 1000ms ease-in-out;
 }
 
 /* Nav */
