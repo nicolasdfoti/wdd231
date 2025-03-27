@@ -15,11 +15,13 @@ hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
 })
 
+
 // Second Part
 
 const allButton = document.querySelector("#all");
 const cseButton = document.querySelector("#cse");
 const wddButton = document.querySelector("#wdd");
+const courseDetails = document.getElementById("course-details");
 
 const courses = [
     {
@@ -105,15 +107,35 @@ function createSectionCard(courses) {
 
     courses.forEach(course => {
 
-        let courseCard = document.createElement("section");
-        let title = document.createElement("p");
+        let title = document.createElement("button");
+        title.classList.add("courseButton");
 
         title.innerHTML = `${course.subject} ${course.number}`;
 
-        courseCard.appendChild(title);
+        title.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
 
-        document.querySelector(".courses").appendChild(courseCard);
+        document.querySelector(".courses").appendChild(title);
     })
+}
+
+function displayCourseDetails(course) {
+
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+    
+    document.querySelector("#closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
 }
 
 allButton.addEventListener("click", () => {
@@ -132,3 +154,5 @@ wddButton.addEventListener("click", () => {
     const wddCourses = courses.filter(course => course.subject === "WDD");
     createSectionCard(wddCourses);
 });
+
+createSectionCard(courses);

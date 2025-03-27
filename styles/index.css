@@ -17,7 +17,7 @@
 
 header {
     background-color: var(--paynes-gray);
-    padding: 10px;
+    padding-top: 10px;
     color: white;
 }
 
@@ -58,7 +58,8 @@ a {
     display: block;
     color: white;
     text-decoration: none;
-    text-align: right;
+    text-align: center;
+    border-bottom: 1px solid var(--pearl);
     font-size: 20px;
     padding: 20px;
 }
@@ -66,10 +67,13 @@ a {
 .open a:hover {
     background-color: var(--pearl);
     color: var(--paynes-gray);
+    font-weight: bold;
 }
 
 #menu {
     padding: 10px;
+    background-color: var(--pearl);
+    border: none;
 }
 
 #menu::before {
@@ -168,10 +172,67 @@ main h1 {
     color: white;
 }
 
+.courses button {
+    background-color: var(--paynes-gray);
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.courses button:nth-child(even) {
+    background-color: var(--sage);
+}
+
+.courses button:hover {
+    background-color: var(--pearl);
+    color: var(--paynes-gray);
+}
+
 .courses section:nth-child(even) {
     background-color: var(--sage);
     color: rgba(0, 0, 0, 0.667);
 }
+
+/* Dialog and Modals */
+
+dialog {
+    background-color: var(--pearl);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    width: 80%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.667);
+}
+
+dialog button {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+dialog h3 {
+    text-align: center;
+}
+
+dialog p, h3 {
+    margin: 10px;
+    font-size: 20px;
+}
+
+/* Footer */
 
 footer {
     background-color: var(--paynes-gray);

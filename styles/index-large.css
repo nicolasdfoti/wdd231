@@ -105,8 +105,4 @@
         background-color: var(--sage);
         color: rgba(0, 0, 0, 0.667);
     }
-    
-    .courses section p {
-        display: flex;
-    }
 }
