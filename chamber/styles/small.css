@@ -15,6 +15,23 @@
     --dark-slate-gray: #2c423fff;
 }
 
+@keyframes myTransition {
+    
+    0% {
+        rotate: 0deg;
+        scale: 10%;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    100% {
+        rotate: 360deg;
+        scale: 100%;
+    }
+}
+
 /* General */
 
 h1 {
@@ -374,6 +391,7 @@ form button {
 form button:hover {
     background-color: var(--silver);
     color: var(--dark-slate-gray);
+    animation: myTransition 4s;
 }
 
 .membership-levels {
@@ -491,6 +509,10 @@ footer {
     width: 50px;
     height: 50px;
     padding: 5px;
+}
+
+#footer-images img:hover {
+    animation: myTransition 4s;
 }
 
 #footer-images a:hover {
