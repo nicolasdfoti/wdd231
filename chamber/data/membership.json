@@ -1,0 +1,45 @@
+{
+    "levels": [
+        {
+            "title": "Gold",
+            "description": "Premium membership with maximum visibility and exclusive access to events and networking.",
+            "publicity": "Featured and permanent banner on the homepage and social media.",
+            "benefits": [
+                "Priority access to networking events.",
+                "Prominent advertising in newsletters and website.",
+                "Exclusive business advisory services.",
+                "Increased presence in chamber campaigns."
+            ]
+        },
+        {
+            "title": "Silver",
+            "description": "Mid-tier membership with solid benefits in visibility and events.",
+            "publicity": "Usual mention in the members' section and social media posts.",
+            "benefits": [
+                "Discounts on networking events.",
+                "Moderate advertising in newsletters and website.",
+                "Access to workshops and training sessions."
+            ]
+        },
+        {
+            "title": "Bronze",
+            "description": "Basic membership with access to growth opportunities and business support.",
+            "publicity": "Sometimes in the members' section of the website.",
+            "benefits": [
+                "Access to free chamber events.",
+                "Newsletters with information and opportunities.",
+                "Assistance with business inquiries."
+            ]
+        },
+        {
+            "title": "NP (Non-Profit)",
+            "description": "Special membership for non-profit organizations with community support benefits.",
+            "publicity": "Mention ONLY in corporate social responsibility campaigns.",
+            "benefits": [
+                "Access to NGO-specific events.",
+                "Discounts or fee waivers on certain services.",
+                "Connections with businesses for collaborations."
+            ]
+        }
+    ]
+}

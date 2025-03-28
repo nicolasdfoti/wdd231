@@ -66,11 +66,11 @@
                     <form id="join-form" action="thankyou.html" method="GET">
 
                         <fieldset>
-                            <label for="fname">First Name: <input type="text" id="fname" name="fname" required on></label>
-                            <label for="lname">Last Name: <input type="text" id="lname" name="lname" required on></label>
+                            <label for="fname">First Name: <input type="text" id="fname" name="fname" required></label>
+                            <label for="lname">Last Name: <input type="text" id="lname" name="lname" required></label>
                             <label for="company">Organizational Title: <input type="text" id="company" name="company" required autocomplete="organization-title" pattern="^[a-zA-Z- ]{7,}$"></label>
                             <label for="email">Email: <input type="email" id="email" name="email" required placeholder="john@gmail.com" autocomplete="Email"></label>
-                            <label for="phone">Phone: <input type="tel" id="phone" name="phone" required autocomplete="Phone Number"></label>
+                            <label for="phone">Phone: <input type="tel" id="phone" name="phone" required></label>
                             <label for="organization">Organization Name: <input type="text" id="organization" name="organization" required autocomplete="Organization"></label>
                         </fieldset>
 
@@ -100,23 +100,27 @@
 
                     <section>
                         <h1>Gold Membership</h1>
-                        <button>Click here for more information</button>
+                        <button id="gold">Click here for more information</button>
                     </section>
 
                     <section>
                         <h1>Silver Membership</h1>
-                        <button>Click here for more information</button>
+                        <button id="silver">Click here for more information</button>
                     </section>
 
                     <section>
                         <h1>Bronze Membership</h1>
-                        <button>Click here for more information</button>
+                        <button id="bronze">Click here for more information</button>
                     </section>
 
                     <section>
                         <h1>NP Membership</h1>
-                        <button>Click here for more information</button>
+                        <button id="np-member">Click here for more information</button>
                     </section>
+
+                    <div class="member-dialog">
+                        <dialog id="membership-details"></dialog>
+                    </div>
 
                 </div>
 

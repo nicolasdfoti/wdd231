@@ -317,84 +317,84 @@ form {
     justify-self: center;
     border: 1px solid var(--dark-slate-gray);
     margin-bottom: 20px;
+}
 
-    fieldset {
-        border: none;
-    }
+form fieldset {
+    border: none;
+}
 
-    select {
-        width: 100%;
-    }
+form select {
+    width: 100%;
+}
 
-    label {
-        font-size: 20px;
-    }
+form label {
+    font-size: 20px;
+}
 
-    input {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+form input {
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-    textarea {
-        width: 100%;
-    }
+form textarea {
+    width: 100%;
+}
 
-    :required {
-        border-left: 4px solid red;
-    }
+form :required {
+    border-left: 4px solid red;
+}
 
-    select:required {
-        border-left: 4px solid red;
-    }
+form select:required {
+    border-left: 4px solid red;
+}
 
-    select:valid {
-        border-left: 4px solid green;
-    }
+form select:valid {
+    border-left: 4px solid green;
+}
 
-    input:valid {
-        border-left: 4px solid green;
-    }
+form input:valid {
+    border-left: 4px solid green;
+}
 
-    textarea:valid {
-        border-left: 4px solid green;
-    }
+form textarea:valid {
+    border-left: 4px solid green;
+}
 
-    button {
-        width: 20%;
-        justify-self: center;
-        background-color: var(--battleship-gray);
-        padding: 10px;
-        color: white;
-        font-weight: bolder;
-        margin-bottom: 10px;
-        cursor: pointer;
-    }
+form button {
+    width: 20%;
+    justify-self: center;
+    background-color: var(--battleship-gray);
+    padding: 10px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
 
-    button:hover {
-        background-color: var(--silver);
-        color: var(--dark-slate-gray);
-    }
+form button:hover {
+    background-color: var(--silver);
+    color: var(--dark-slate-gray);
 }
 
 .membership-levels {
     align-self: center;
+}
 
-    h2 {
-        text-align: center;
-    }
+.membership-levels h2 {
+    text-align: center;
+}
 
-    button {
-        align-self: center;
-        text-align: center;
-        background-color: var(--outer-space);
-        color: white;
-        padding: 10px;
-        cursor: pointer;
-    }
+.membership-levels button {
+    align-self: center;
+    text-align: center;
+    background-color: var(--outer-space);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
 
-    button:hover {
-        background-color: var(--dark-slate-gray);
-    }
+.membership-levels button:hover {
+    background-color: var(--dark-slate-gray);
 }
 
 .membership-levels section {
@@ -411,6 +411,53 @@ form {
 
 .membership-levels section:nth-child(even) {
     background-color: var(--silver);
+}
+
+/* Dialog and Modals */
+
+#membership-details {
+    background-color: var(--battleship-gray-2);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    width: 80%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+}
+
+#membership-details button {
+    position: absolute;
+    background-color: var(--silver);
+    top: 10%;
+    font-size: 30px;
+    color: var(--dark-slate-gray);
+    right: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#membership-details button:hover {
+    background-color: var(--dark-slate-gray);
+    color: var(--silver);
+}
+
+dialog h1 {
+    text-align: center;
+    background-color: var(--silver);
+    padding: 10px;
+    color: var(--dark-slate-gray);
+}
+
+dialog p {
+    margin: 10px;
+    font-size: 20px;
+}
+
+dialog li {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* Thank You page */
