@@ -13,4 +13,7 @@ hamButton.addEventListener("click", () => {
     navigation.classList.toggle("open");
 })
 
+// Timestamp
+document.getElementById("timestamp").value = new Date().toISOString();
+
 // Membership Levels
