@@ -361,7 +361,7 @@ form textarea:valid {
 }
 
 form button {
-    width: 20%;
+    width: 40%;
     justify-self: center;
     background-color: var(--battleship-gray);
     padding: 10px;
