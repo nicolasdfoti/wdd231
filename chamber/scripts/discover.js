@@ -21,11 +21,19 @@ async function getPlacesInfo() {
 
     const response = await fetch(places);
 
-    if (response.ok) {
-        const data = await response.json();
-        displayPlacesInfo(data.places);
-        return data.places;
+    try {
+        if (response.ok) {
+            const data = await response.json();
+            displayPlacesInfo(data.places);
+            return data.places;
+        }
+        else {
+            console.log(error)
+        }
+    } catch(error) {
+        console.log("There was an error with the JSON file!");
     }
+
 
 }
 
@@ -46,15 +54,16 @@ const displayPlacesInfo = (places) => {
         const address = document.createElement("p");
         const placesButton = document.createElement("button");
 
-        title.innerHTML = place.name;
-        description.innerHTML = place.description;
-        address.innerHTML = place.address;
-        placesButton.innerHTML = `More information`;
+        title.textContent = place.name;
+        description.textContent = place.description;
+        address.textContent = place.address;
+        placesButton.textContent = `More information`;
 
         figure.setAttribute("src", place.image);
-        figure.setAttribute("width", 400);
+        figure.setAttribute("width", 300);
         figure.setAttribute("alt", place.description);
-        figure.setAttribute("height", 250);
+        figure.setAttribute("height", 300);
+        figure.setAttribute("loading", "lazy");
 
         card.appendChild(title);
         card.appendChild(description);

@@ -128,7 +128,7 @@ a {
     transition: 0.3s ease-in-out;
 }
 
-a:hover, a:active {
+nav a:hover, a:active {
     background-color: var(--dark-slate-gray);
     color: var(--silver);
 }
@@ -187,7 +187,7 @@ a:hover, a:active {
     color: var(--dark-slate-gray);
 }
 
-a:hover, a:active {
+nav a:hover, a:active {
     background-color: var(--dark-slate-gray);
     color: var(--silver);
 }
@@ -508,6 +508,11 @@ dialog li {
 
 /* Discovery Page */
 
+.places {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .places-card {
     display: flex;
     flex-direction: column;
@@ -523,14 +528,15 @@ dialog li {
 
 .places-card p {
     text-align: center;
-    color: white;
+    color: black;
     font-size: 20px;
     font-weight: bold;
 }
 
 .places-card button {
     background-color: var(--dark-slate-gray);
-    color: var(--silver);
+    color: white;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -540,8 +546,10 @@ dialog li {
 }
 
 .places-card img {
-    max-width: 300px;
-    max-height: 400px;
+    object-fit: cover;
+    width: 80%;
+    height: auto;
+    max-height: 300px;
     border: 3px solid var(--dark-slate-gray);
 }
 
@@ -559,19 +567,16 @@ footer {
 }
 
 #footer-images {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 #footer-images img {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+    width: 100%;
+    max-width: 40px;
+    height: auto;
 }
 
 #footer-images img:hover {
-    animation: myTransition 1s;
-}
-
-#footer-images a:hover {
-    background-color: var(--battleship-gray);
+    animation: myTransition 2s;
 }
