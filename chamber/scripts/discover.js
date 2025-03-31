@@ -52,9 +52,9 @@ const displayPlacesInfo = (places) => {
         placesButton.innerHTML = `More information`;
 
         figure.setAttribute("src", place.image);
-        figure.setAttribute("width", "auto");
+        figure.setAttribute("width", 400);
         figure.setAttribute("alt", place.description);
-        figure.setAttribute("height", "auto");
+        figure.setAttribute("height", 250);
 
         card.appendChild(title);
         card.appendChild(description);
@@ -68,3 +68,6 @@ const displayPlacesInfo = (places) => {
 }
 
 getPlacesInfo();
+
+// Local Storage
+
