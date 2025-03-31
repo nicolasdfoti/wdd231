@@ -31,7 +31,7 @@ async function getPlacesInfo() {
             console.log(error)
         }
     } catch(error) {
-        console.log("There was an error with the JSON file!");
+        console.log("There was an error with the JSON file!", error);
     }
 
 
@@ -80,3 +80,27 @@ getPlacesInfo();
 
 // Local Storage
 
+const currentVisit = Date.now();
+const lastVisit = localStorage.getItem("lastVisit");
+const welcomeMessage = document.querySelector("#welcome-message");
+
+const text = document.createElement("h2");
+
+if (!lastVisit) {
+    text.textContent = "Welcome! Let us know if you have any questions!";
+}
+
+else {
+    const timeDifference = currentVisit - lastVisit;
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+    if (daysDifference < 1) {
+        text.textContent = "Back so soon! Awesome!";
+    }
+    else {
+        text.textContent = `You last visited ${daysDifference} day${daysDifference > 1 ? 's' : ''} ago.`;
+    }
+}
+
+welcomeMessage.appendChild(text);
+localStorage.setItem('lastVisit', currentVisit);

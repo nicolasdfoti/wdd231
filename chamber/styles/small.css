@@ -508,6 +508,12 @@ dialog li {
 
 /* Discovery Page */
 
+#welcome-message h2 {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--silver);
+}
+
 .places {
     display: grid;
     grid-template-columns: 1fr;
