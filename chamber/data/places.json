@@ -1,0 +1,52 @@
+{
+    "places": [
+        {
+            "name": "Vicente López Ecological Reserve",
+            "description": "A protected natural area of 2 hectares that is home to native flora and fauna. It offers trails for walking and is perfect for birdwatching and environmental education.",
+            "address": "Paraná 4516, Vicente López, Buenos Aires, Argentina",
+            "image": "images/reserva.webp"
+        },
+        {
+            "name": "Paseo de la Costa",
+            "description": "A beautiful coastal park along the Río de la Plata, ideal for walking, biking, and enjoying green spaces. It features an artisan market and various sports facilities.",
+            "address": "Av. Raúl Alfonsín y Laprida, Vicente López, Buenos Aires, Argentina",
+            "image": "images/paseo-costa.webp"
+        },
+        {
+            "name": "Quinta Trabucco",
+            "description": "A historic mansion surrounded by large gardens, now used as a cultural center hosting exhibitions and events. It’s a great place to enjoy cultural activities in a natural setting.",
+            "address": "Carlos F. Melo 3050, Florida, Buenos Aires, Argentina",
+            "image": "images/trabucco.webp"
+        },
+        {
+            "name": "Ader Tower",
+            "description": "A distinctive architectural tower offering panoramic views of the city. It is a historic monument and an emblematic symbol of Vicente López.",
+            "address": "Triunvirato 3400, Villa Adelina, Buenos Aires, Argentina",
+            "image": "images/torre-ader.webp"
+        },
+        {
+            "name": "Lumiton Museum",
+            "description": "Located in the former Lumiton film studios, this museum provides an insight into Argentine cinema history. It is a cultural space that preserves the memory of national filmmaking.",
+            "address": "Sargento Cabral 2354, Munro, Buenos Aires, Argentina",
+            "image": "images/lumiton.webp"
+        },
+        {
+            "name": "Parish of Jesus in the Garden of Olives",
+            "description": "A church of great architectural and spiritual value, known for its design and relevance in the local community. It is a point of interest for those who appreciate religious architecture.",
+            "address": "Av. Maipú 2262, Olivos, Buenos Aires, Argentina",
+            "image": "images/parroquia.webp"
+        },
+        {
+            "name": "End of the Millennium Monument",
+            "description": "An emblematic sculpture located at Paseo de la Costa, symbolizing the transition to the new millennium and serving as a landmark in the coastal area.",
+            "address": "Av. Raúl Alfonsín y Gral. Roca, Vicente López, Buenos Aires, Argentina",
+            "image": "images/monumento-milenio.webp"
+        },
+        {
+            "name": "Vicente López y Planes Square",
+            "description": "A central square with green areas, children's playgrounds, and recreational spaces, ideal for enjoying outdoor moments with family or friends.",
+            "address": "Ricardo Gutiérrez y Av. Maipú, Vicente López, Buenos Aires, Argentina",
+            "image": "images/plaza.webp"
+        }
+    ]
+}

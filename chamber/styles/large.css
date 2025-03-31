@@ -113,6 +113,16 @@
         width: 95%;
     }
 
+    .places {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+
+    .places-card:hover {
+        animation: margins 3s;
+    }
+
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
