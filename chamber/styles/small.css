@@ -577,6 +577,7 @@ dialog li {
 
 .places-card img {
     grid-area: figure;
+    width: 300px;
     height: auto;
     justify-self: center;
     object-fit: cover;
@@ -602,8 +603,7 @@ footer {
 }
 
 #footer-images img {
-    width: 100%;
-    max-width: 40px;
+    width: 40px;
     height: auto;
 }
 

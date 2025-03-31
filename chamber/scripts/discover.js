@@ -100,7 +100,7 @@ else {
         text.textContent = "Back so soon! Awesome!";
     }
     else {
-        text.textContent = `You last visited ${daysDifference} day${daysDifference > 1 ? 's' : ''} ago.`;
+        text.textContent = `Welcome! You last visited ${daysDifference} days ago.`;
     }
 }
 
