@@ -1,0 +1,19 @@
+@media only screen and (min-width: 20rem) {
+
+    .places {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .places-card {
+        width: 95%;
+        display: grid;
+        grid-template-areas: 
+        "figure name"
+        "figure description"
+        "figure address"
+        "figure button"
+        ;
+    }
+
+}

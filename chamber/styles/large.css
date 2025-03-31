@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media only screen and (min-width: 64rem) {
 
     /* General */
 
@@ -119,6 +119,16 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
+    }
+
+    .places-card {
+        grid-template-areas: 
+        "name"
+        "figure"
+        "description"
+        "address"
+        "button"
+        ;
     }
 
     .places-card img:hover {

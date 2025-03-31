@@ -51,24 +51,26 @@ const displayPlacesInfo = (places) => {
         const title = document.createElement("h2");
         const figure = document.createElement("img");
         const description = document.createElement("p");
+        description.classList.add("description");
         const address = document.createElement("p");
+        address.classList.add("address");
         const placesButton = document.createElement("button");
 
         title.textContent = place.name;
         description.textContent = place.description;
         address.textContent = place.address;
-        placesButton.textContent = `More information`;
+        placesButton.textContent = `Learn More`;
 
         figure.setAttribute("src", place.image);
-        figure.setAttribute("width", 300);
+        figure.setAttribute("width", 400);
         figure.setAttribute("alt", place.description);
         figure.setAttribute("height", 300);
         figure.setAttribute("loading", "lazy");
 
+        card.appendChild(figure);
         card.appendChild(title);
         card.appendChild(description);
         card.appendChild(address);
-        card.appendChild(figure);
         card.appendChild(placesButton);
 
         placesContainer.appendChild(card);

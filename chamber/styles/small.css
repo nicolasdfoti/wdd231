@@ -35,7 +35,7 @@
 @keyframes margins {
     
     0% {
-        border: 1px solid var(--silver);
+        border: 1px solid var(--battleship-gray-2);
         margin: 10px;
     }
 
@@ -45,7 +45,7 @@
     }
 
     100% {
-        border: 1px solid var(--silver);
+        border: 1px solid var(--battleship-gray-2);
         margin: 0;
     }
 }
@@ -511,7 +511,7 @@ dialog li {
 #welcome-message h2 {
     padding: 10px;
     text-align: center;
-    background-color: var(--silver);
+    background-color: var(--battleship-gray-2);
 }
 
 .places {
@@ -520,42 +520,66 @@ dialog li {
 }
 
 .places-card {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--battleship-gray-2);
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "figure"
+    "description"
+    "address"
+    "button";
+    background-color: var(--silver);
     margin: 20px;
     border: 1px solid var(--dark-slate-gray);
-    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 10px;
     width: auto;
     justify-self: center;
     align-items: center;
     gap: 10px;
 }
 
-.places-card p {
+.places-card h2 {
+    grid-area: name;
+    text-align: center;
+    padding: 5px;
+}
+
+.description {
+    grid-area: description;
     text-align: center;
     color: black;
     font-size: 20px;
-    font-weight: bold;
+}
+
+.address {
+    grid-area: address;
+    font-style: italic;
+    text-align: center;
 }
 
 .places-card button {
+    grid-area: button;
     background-color: var(--dark-slate-gray);
+    width: 50%;
+    justify-self: center;
     color: white;
     font-size: 20px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .places-card button:hover {
-    background-color: var(--silver);
+    background-color: var(--battleship-gray-2);
+    font-weight: bold;
     color: var(--dark-slate-gray);
 }
 
 .places-card img {
-    object-fit: cover;
-    width: 80%;
+    grid-area: figure;
     height: auto;
-    max-height: 300px;
+    justify-self: center;
+    object-fit: cover;
     border: 3px solid var(--dark-slate-gray);
 }
 
