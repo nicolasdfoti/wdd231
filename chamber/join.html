@@ -37,7 +37,7 @@
             <nav>
                 <a href="index.html">Home</a>
                 <a href="directory.html">Directory</a>
-                <a href="join.html">Join</a>
+                <a href="join.html" class="active">Join</a>
                 <a href="discover.html">Discovery</a>
             </nav>
 
@@ -68,7 +68,7 @@
                         <fieldset>
                             <label for="fname">First Name: <input type="text" id="fname" name="fname" required title="Enter your First Name" autocomplete="given-name"></label>
                             <label for="lname">Last Name: <input type="text" id="lname" name="lname" required title="Enter your Last Name" autocomplete="family-name"></label>
-                            <label for="company">Organizational Title: <input type="text" id="company" name="company" required title="Enter your Company Title" autocomplete="organization-title" pattern="^[a-zA-Z- ]{7,}$"></label>
+                            <label for="company">Organizational Title: <input type="text" id="company" name="company" required title="Enter your Organizational Title" autocomplete="organization-title" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ- ]{7,}$"></label>
                             <label for="email">Email: <input type="email" id="email" name="email" required placeholder="john@gmail.com" title="Enter your Email" autocomplete="email"></label>
                             <label for="phone">Phone: <input type="tel" id="phone" name="phone" required title="Enter your Phone Number" autocomplete="tel"></label>
                             <label for="organization">Organization Name: <input type="text" id="organization" name="organization" required title="Enter your Organization Name" autocomplete="organization"></label>
@@ -76,7 +76,8 @@
 
                         <fieldset>
                             <label for="select">Select your membership level:</label>
-                            <select name="select" id="select" title="Select one option">
+                            <select required name="select" id="select" title="Select one option">
+                                <option selected disabled value="">Select</option>
                                 <option value="NP Membership">NP Membership</option>
                                 <option value="Bronze">Bronze Membership</option>
                                 <option value="Silver">Silver Membership</option>

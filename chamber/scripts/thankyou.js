@@ -40,5 +40,8 @@ thankYou.innerHTML = `
     <h2>Relevant Information</h2>
     <p>Your membership level: ${myInfo.get("select")} | Your description: ${myInfo.get("description")}</p>
 
+    <h2>Submission Date:</h2>
+    <p>${new Date(myInfo.get("timestamp")).toLocaleString()}</p>
+
     </div>
 `;

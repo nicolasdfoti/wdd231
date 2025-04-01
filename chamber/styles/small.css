@@ -50,6 +50,17 @@
     }
 }
 
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* General */
 
 h1 {
@@ -111,11 +122,13 @@ header img {
 nav {
     display: none;
     background-color: var(--battleship-gray-2);
-    position: absolute;
-    top: 20%;
-    left: 0;
-    width: 100%;
     z-index: 100;
+}
+
+.active {
+    background-color: var(--dark-slate-gray);
+    color: var(--silver);
+    font-weight: bold;
 }
 
 a {
@@ -409,11 +422,11 @@ form button {
 form button:hover {
     background-color: var(--silver);
     color: var(--dark-slate-gray);
-    animation: myTransition 4s;
 }
 
 .membership-levels {
     align-self: center;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 .membership-levels h2 {
@@ -427,10 +440,13 @@ form button:hover {
     color: white;
     padding: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
 }
 
 .membership-levels button:hover {
     background-color: var(--dark-slate-gray);
+    transform: scale(1.05);
 }
 
 .membership-levels section {
