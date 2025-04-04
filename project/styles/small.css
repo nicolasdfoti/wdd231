@@ -20,20 +20,44 @@
 }
 
 @keyframes Circling {
-    
     0% {
         rotate: 0deg;
         scale: 100%;
+        translate: 0 0;
     }
 
     50% {
         rotate: 180deg;
         scale: 50%;
+        translate: 0 0;
+    }
+
+    90% {
+        rotate: 360deg;
+        scale: 200%;
+        translate: 0 0;
+    }
+
+    92% {
+        translate: -2px 0;
+    }
+
+    94% {
+        translate: 2px 0;
+    }
+
+    96% {
+        translate: -2px 0;
+    }
+
+    98% {
+        translate: 2px 0;
     }
 
     100% {
         rotate: 360deg;
         scale: 200%;
+        translate: 0 0;
     }
 }
 
@@ -52,7 +76,7 @@ header img {
 }
 
 header img:hover {
-    animation: Circling 3s ease-out;
+    animation: Circling 4s ease-out;
 }
 
 .header-div {
@@ -84,80 +108,7 @@ nav a:hover {
 
 /* Main */
 
-main {
-    padding: 15px;
-    margin: 20px;
-    font-family: var(--roboto);
-}
 
-h2 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.main-div {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-.main-div section {
-    border: 1px solid var(--castleton-green);
-    padding: 10px;
-}
-
-section li {
-    list-style: none;
-    padding: 10px;
-    color: black;
-    font-size: 20px;
-}
-
-#black {
-    background-color: var(--black);
-    color: white;
-}
-
-#castleton {
-    background-color: var(--castleton-green);
-    color: var(--white);
-}
-
-#sea {
-    background-color: var(--sea-green);
-    color: var(--white);
-}
-
-#emerald {
-    background-color: var(--emerald);
-}
-
-#celadon {
-    background-color: var(--celadon);
-}
-
-#teko {
-    font-family: var(--teko);
-    font-size: 30px;
-}
-
-#anton {
-    font-family: var(--anton);
-}
-
-#roboto {
-    font-family: var(--roboto);
-}
-
-#wireframes {
-    display: flex;
-    gap: 20px;
-}
-
-#wireframes img {
-    max-width: 400px;
-    max-height: 300px;
-}
 
 footer {
     background-color: var(--castleton-green);
