@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
+        <script defer src="scripts/index.js"></script>
         <link rel="icon" href="images/eagle.gif">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +37,7 @@
             <div class="header-div">
                 <img src="images/eagle.gif" alt="Our Eagle Logo">
                 <h1>Extreme Sports</h1>
+                <button id="hamburgerButton">Menu</button>
             </div>
             
             <nav>
@@ -48,7 +50,93 @@
 
         <main>
 
-            <h1>Home</h1>
+            <div class="hero-div">
+
+                <h1>Home</h1>
+
+                <div class="hero-presentation">
+                    <h2>Welcome to Extreme Sports!</h2>
+                    <p>Join a community of adrenaline seekers! Discover the latest adventures, and take your passion to the next level.</p>
+                </div>
+
+                <picture>
+                    <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+                    <img src="images/hero-small.webp" alt="Sports Hero Image">
+                </picture>
+
+                <button>Join Us!</button>
+
+            </div>
+
+            <p class="localStorage"></p>
+
+            <div class="home-sections">
+
+                <section>
+
+                    <h2>Next matches:</h2>
+
+                    <ul id="matches">
+                        <li>Barcelona - Real Madrid | 18:00</li>
+                        <li>Pumas - All Blacks | 21:00</li>
+                        <li>Switzerland - Poland | 21:30</li>
+                        <li>Boca Jrs - River Plate | 09:30</li>
+                    </ul>
+
+                </section>
+
+                <section>
+
+                    <h2>Current Weather:</h2>
+
+                    <div id="weather-section">
+
+                        <div id="weather-image">
+
+                            <img src="images/weather.webp" alt="Weather Image" loading="lazy">
+
+                        </div>
+
+                        <div>
+                            <p id="temperature"></p>
+                            <p id="weather"></p>
+                            <p id="highest"></p>
+                            <p id="lowest"></p>
+                            <p id="humidity"></p>
+                            <p id="windspeed"></p>
+                        </div>
+
+
+                    </div>
+                    
+                </section>
+
+            </div>
+
+            <div id="latest-news">
+
+                <section>
+                    <h1>Muller to exit Bayern Munich!</h1>
+                    <p>The german side will not continue Thomas Muller contract after this current season. The german midfielder will have to find another club after July</p>
+                    <img src="images/muller.webp" alt="Thomas Muller">
+                    <button>Read more!</button>
+                </section>
+
+                <section>
+                    <h1>Valencia beats Real Madrid!</h1>
+                    <p>Valencia won it in Bernabéu against the giant Real Madrid. It was almost impossible, but by the end, Valencia scored and took the three points</p>
+                    <img src="images/real-madrid.png" alt="Real against Valencia">
+                    <button>Read more!</button>
+                </section>
+
+                <section>
+                    <h1>Chiesa back to Italy?</h1>
+                    <p>Federico Chiesa is not in his best form this winter. He could go back to Italy: he still has this season to prove Liverpool fans that he deserves a place, but he has three offers from Calcio. What will he do?</p>
+                    <img src="images/chiesa.webp" alt="Federico Chiesa">
+                    <button>Read more!</button>
+                </section>
+
+            </div>
 
         </main>
 

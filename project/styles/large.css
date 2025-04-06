@@ -1,4 +1,78 @@
 @media screen and (min-width: 1000px) {
     
+    /* Index */
+
+    .header-div {
+        display: flex;
+        align-items: center;
+        justify-self: center;
+        font-size: 30px;
+    }
+
+    .header-div img {
+        width: 100px;
+    }
+
+    #hamburgerButton {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .open {
+        display: flex;
+    }
+
+    nav a {
+        width: 40%;
+    }
+
+    .hero-div picture, .hero-div img {
+        max-height: 600px;
+    }
+
+    .hero-presentation {
+        top: 150px;
+        height: 40%;
+    }
+
+    #weather-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 200px;
+    }
+
+    #latest-news section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        padding: 10px;
+        border-top: 1px solid var(--castleton-green);
+        margin-top: 10px;
+        grid-template-areas: 
+        "image h1"
+        "image paragraph"
+        "image button";
+    }
     
+    #latest-news img {
+        width: 450px;
+        height: auto;
+        border: 3px solid var(--emerald);
+        grid-area: image;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    #latest-news h1 {
+        font-family: var(--anton);
+        text-align: center;
+        grid-area: h1;
+    }
+    
+    #latest-news p {
+        grid-area: paragraph;
+    }
 }

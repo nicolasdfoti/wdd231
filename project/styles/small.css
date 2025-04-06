@@ -61,8 +61,6 @@
     }
 }
 
-/* SitePlan */
-
 /* Header */
 
 header {
@@ -72,7 +70,7 @@ header {
 }
 
 header img {
-    width: 100px;
+    width: 60px;
 }
 
 header img:hover {
@@ -83,12 +81,41 @@ header img:hover {
     display: flex;
     align-items: center;
     justify-self: center;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+#hamburgerButton {
+    position: absolute;
+    right: 10px;
+}
+
+header button {
+    background-color: var(--celadon);
+    font-family: var(--teko);
+    border: none;
+    padding: 10px;
+}
+
+header button:hover {
+    background-color: var(--white);
+    color: var(--castleton-green);
 }
 
 nav {
     display: flex;
     justify-content: space-evenly;
+    display: none;
+}
+
+.open {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.open a {
+    text-align: center;
+    width: 100%;
 }
 
 nav a {
@@ -96,19 +123,203 @@ nav a {
     color: white;
     font-size: 30px;
     padding: 10px;
-    width: 40%;
     text-align: center;
 }
 
 nav a:hover {
     background-color: var(--emerald);
     color: black;
-    border-bottom: 5px solid var(--sea-green);
+    border-bottom: 5px solid var(--white);
 }
+
+/* Index */
 
 /* Main */
 
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
 
+.hero-div h1 {
+    position: absolute;
+    background-color: var(--celadon);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--anton);
+    z-index: 1;
+}
+
+.hero-div picture, .hero-div img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 1000px;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-div button {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--celadon);
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-family: var(--teko);
+    font-size: 30px;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.hero-div button:hover {
+    transform: scale(1.1);
+}
+
+.hero-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 150px;
+    border: 5px solid var(--white);
+    align-self: center;
+    font-family: var(--teko);
+    font-size: 20px;
+    position: absolute;
+    background-color: var(--sea-green);
+    color: var(--white);
+    font-weight: bold;
+    width: 50%;
+    height: 60%;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+.hero-presentation h2 {
+    font-size: 40px;
+}
+
+.localStorage {
+    background-color: var(--celadon);
+    font-family: var(--teko);
+    font-size: 30px;
+    text-align: center;
+    border: 5px solid var(--castleton-green);
+}
+
+.home-sections {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.home-sections section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--emerald);
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+    font-family: var(--roboto);
+}
+
+.home-sections h2 {
+    text-align: center;
+    background-color: var(--castleton-green);
+    padding: 10px;
+    color: var(--white);
+}
+
+#matches {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    text-align: center;
+}
+
+#matches li {
+    background-color: var(--white);
+    margin: 10px;
+    width: 100%;
+    list-style: none;
+}
+
+#weather-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#weather-image img {
+    width: 200px;
+}
+
+#weather-section p {
+    margin-top: 10px;
+}
+
+#latest-news {
+    display: block;
+}
+
+#latest-news section {
+    display: grid;
+    gap: 10px;
+    width: 100%;
+    border-top: 1px solid var(--castleton-green);
+    margin-top: 10px;
+    grid-template-areas: 
+    "h1"
+    "paragraph"
+    "image";
+}
+
+#latest-news img {
+    width: 400px;
+    height: 250px;
+    border: 3px solid var(--emerald);
+    grid-area: "image";
+    justify-self: center;
+}
+
+#latest-news h1 {
+    font-family: var(--anton);
+    text-align: center;
+    grid-area: "h1";
+}
+
+#latest-news p {
+    grid-area: "paragraph";
+    font-family: var(--roboto);
+    padding: 10px;
+}
+
+#latest-news button {
+    background-color: var(--celadon);
+    color: var(--castleton-green);
+    font-family: var(--roboto);
+    cursor: pointer;
+    margin: 10px;
+    padding: 5px;
+}
+
+#latest-news button:hover {
+    background-color: var(--castleton-green);
+    color: var(--white);
+}
+
+
+/* Footer */
 
 footer {
     background-color: var(--castleton-green);
