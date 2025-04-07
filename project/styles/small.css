@@ -528,6 +528,24 @@ main h1 {
     font-family: var(--roboto);
 }
 
+/* Sources */
+
+#sources {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#sources h2 {
+    font-family: var(--teko);
+    padding-top: 10px;
+}
+
+#sources a {
+    color: var(--castleton-green);
+    font-size: 20px;
+}
+
 /* Footer */
 
 footer {
@@ -537,4 +555,15 @@ footer {
     font-size: 20px;
     padding: 20px;
     text-align: center;
+}
+
+footer a {
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+footer a:hover {
+    color: var(--castleton-green);
+    background-color: var(--white);
 }
