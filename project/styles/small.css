@@ -87,18 +87,17 @@ header img:hover {
 #hamburgerButton {
     position: absolute;
     right: 10px;
-}
-
-header button {
+    transition: transform 0.3s ease;
     background-color: var(--celadon);
     font-family: var(--teko);
     border: none;
     padding: 10px;
 }
 
-header button:hover {
+#hamburgerButton:hover {
     background-color: var(--white);
     color: var(--castleton-green);
+    transform: scale(1.1);
 }
 
 nav {
@@ -288,18 +287,18 @@ nav a:hover {
     width: 400px;
     height: 250px;
     border: 3px solid var(--emerald);
-    grid-area: "image";
+    grid-area: image;
     justify-self: center;
 }
 
 #latest-news h1 {
     font-family: var(--anton);
     text-align: center;
-    grid-area: "h1";
+    grid-area: h1;
 }
 
 #latest-news p {
-    grid-area: "paragraph";
+    grid-area: paragraph;
     font-family: var(--roboto);
     padding: 10px;
 }
@@ -318,6 +317,209 @@ nav a:hover {
     color: var(--white);
 }
 
+/* Latest News */
+/* Main */
+
+#latest-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+#latest-sections section {
+    background-color: var(--celadon);
+    padding: 10px;
+    width: fit-content;
+    height: 250px;
+    width: 95%;
+    margin: 10px;
+    border: 3px solid var(--castleton-green);
+    display: grid;
+    align-self: center;
+    align-items: center;
+    grid-template-areas:
+    "image h2"
+    "image button";
+}
+
+#latest-sections h2 {
+    font-family: var(--anton);
+    text-align: center;
+    grid-area: h2;
+    padding: 10px;
+}
+
+#latest-sections img {
+    align-self: center;
+    grid-area: image;
+    border: 1px solid var(--castleton-green);
+}
+
+#latest-sections button {
+    grid-area: button;
+    width: fit-content;
+    max-height: 30px;
+    background-color: var(--emerald);
+    border: 2px solid var(--castleton-green);
+    padding: 5px;
+    justify-self: center;
+    cursor: pointer;
+}
+
+#latest-sections button:hover {
+    transform: scale(1.1);
+}
+
+#latest-sections dialog {
+    background-color: var(--celadon);
+    border-radius: 10px;
+    border: 3px solid var(--castleton-green);
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    height: fit-content;
+    text-align: center;
+}
+
+dialog img {
+    height: 200px;
+    width: auto;
+    margin: 10px;
+    border: 1px solid var(--castleton-green);
+}
+
+#latest-sections p {
+    font-family: var(--roboto);
+    font-size: 20px;
+    text-align: left;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--castleton-green);
+}
+
+::backdrop {
+    background-color: var(--castleton-green);
+    opacity: 0.7;
+}
+
+/* Join Page */
+/* Main */
+
+main h1 {
+    font-family: var(--anton);
+    text-align: center;
+    background-color: var(--celadon);
+    padding: 10px;
+}
+
+.join-main {
+    display: flex;
+    justify-content: center;
+}
+
+#join-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    justify-self: center;
+    font-family: var(--teko);
+    margin: 10px;
+    border: 3px solid var(--castleton-green);
+    background-color: var(--emerald);
+}
+
+#join-form legend {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px;
+    color: var(--castleton-green);
+    font-weight: bold;
+}
+
+#join-form fieldset {
+    border: none;
+}
+
+#join-form input, #join-form select, #join-form textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+#join-form label, #join-form select {
+    font-family: var(--anton);
+    font-size: 20px;
+}
+
+#join-form button {
+    background-color: var(--sea-green);
+    color: var(--white);
+    font-size: 20px;
+    align-self: center;
+    padding: 5px;
+    cursor: pointer;
+    width: 50%;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+#join-form button:hover {
+    background-color: var(--celadon);
+    color: var(--castleton-green);
+    transform: scale(1.1);
+}
+
+#join-form input:required, #join-form select:required {
+    border-bottom: 3px solid red;
+}
+
+#join-form input:required:valid, #join-form select:required:valid {
+    border-bottom: 3px solid blue;
+}
+
+/* Thank You page */
+/* Main */
+
+#thankyou-main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 20px;
+}
+
+.thankyou-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    border: 5px solid var(--celadon);
+    align-self: center;
+    font-family: var(--teko);
+    font-size: 20px;
+    background-color: var(--sea-green);
+    color: var(--white);
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+
+#thankyou-info h2, #thankyou-info p {
+    padding: 10px;
+}
+
+#thankyou-info h2 {
+    font-family: var(--teko);
+}
+
+#thankyou-info p {
+    font-family: var(--roboto);
+}
 
 /* Footer */
 

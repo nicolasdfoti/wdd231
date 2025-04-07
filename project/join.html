@@ -5,14 +5,15 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Nicolás Foti">
-        <meta name="description" content="This is my Site Plan Page for the WDD231 class">
-        <meta property="og:title" content="Site Plan">
+        <meta name="description" content="This is my Join Page for the WDD231 class">
+        <meta property="og:title" content="Join">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="https://nicolasdfoti.github.io/wdd231/project/siteplan.html">
+        <meta property="og:url" content="https://nicolasdfoti.github.io/wdd231/project/join.html">
         <meta property="og:image" content="https://blogskystorage.s3.amazonaws.com/2021/07/skyairline_skyairline_image_182-2048x1365.jpeg">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
         <link rel="stylesheet" href="styles/small.css">
         <link rel="stylesheet" href="styles/large.css">
+        <script defer src="scripts/join.js"></script>
         <link rel="icon" href="images/eagle.gif">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +37,7 @@
             <div class="header-div">
                 <img src="images/eagle.gif" alt="Our Eagle Logo">
                 <h1>Extreme Sports</h1>
+                <button id="hamburgerButton">Menu</button>
             </div>
             
             <nav>
@@ -48,7 +50,65 @@
 
         <main>
 
-            <h1>Join us!</h1>
+            <div class="hero-div">
+
+                <h1>Join Us!</h1>
+
+                <div class="hero-presentation">
+                    <h2>Join Us!</h2>
+                    <p>Join a community of adrenaline seekers! Discover the latest adventures, and take your passion to the next level.</p>
+                </div>
+
+                <picture>
+                    <source srcset="images/hero-large-join.webp" media="(min-width: 1000px)">
+                    <img src="images/hero-small.webp" alt="Sports Hero Image">
+                </picture>
+
+            </div>
+
+            <div class="join-main">
+
+                <div>
+
+                    <form id="join-form" action="thankyou.html" method="get">
+
+                        <legend>Fill this form to receive the latest sports news!</legend>
+
+                        <fieldset>
+                            <label for="firstname">First Name<input type="text" name="firstname" id="firstname" required placeholder="Nicolás" title="Enter your First Name" autocomplete="given-name"></label>
+                            <label for="lastname">Last Name<input type="text" name="lastname" id="lastname" placeholder="Foti" required title="Enter your Last Name" autocomplete="family-name"></label>
+                            <label for="email">Email<input type="email" name="email" id="email" required placeholder="john@gmail.com" title="Enter your email" autocomplete="email"></label>
+                            <label for="phone">Phone Number<input type="tel" name="phone" id="phone" required placeholder="+12 3456-7890" title="Enter your phone number" autocomplete="tel"></label>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="select">Select your preferred communication channel:</label>
+                            <select name="communication" id="communication" required title="Select your preferred communication channel:">
+                                <option value="selected" selected disabled>Select an option:</option>
+                                <option value="phone">Phone</option>
+                                <option value="mail">Mail</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <label for="improvements">What could we improve?<textarea id="improvements" name="improvements" placeholder="Improvements here!" title="textarea"></textarea></label>
+                        </fieldset>
+
+                        <button>Receive latest news!</button>
+
+                    </form>
+
+                </div>
+
+                <div>
+
+                    <section>
+
+                    </section>
+
+                </div>
+
+            </div>
 
         </main>
 

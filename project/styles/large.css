@@ -75,4 +75,29 @@
     #latest-news p {
         grid-area: paragraph;
     }
+
+    /* Latest News */
+
+    #latest-sections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    /* Join Page */
+    /* Main */
+
+    #join-form {
+        max-width: 50%;
+    }
+
+    /* Thank you Page */
+
+    #thankyou-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
 }
