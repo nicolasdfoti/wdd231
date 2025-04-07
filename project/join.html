@@ -72,7 +72,9 @@
 
                     <form id="join-form" action="thankyou.html" method="get">
 
-                        <legend>Fill this form to receive the latest sports news!</legend>
+                        <fieldset>
+                            <legend>Fill this form to receive the latest sports news!</legend>
+                        </fieldset>
 
                         <fieldset>
                             <label for="firstname">First Name<input type="text" name="firstname" id="firstname" required placeholder="Nicolás" title="Enter your First Name" autocomplete="given-name"></label>
@@ -82,9 +84,9 @@
                         </fieldset>
 
                         <fieldset>
-                            <label for="select">Select your preferred communication channel:</label>
+                            <label for="communication">Select your preferred communication channel:</label>
                             <select name="communication" id="communication" required title="Select your preferred communication channel:">
-                                <option value="selected" selected disabled>Select an option:</option>
+                                <option value="" selected disabled>Select an option:</option>
                                 <option value="phone">Phone</option>
                                 <option value="mail">Mail</option>
                             </select>
