@@ -1,12 +1,6 @@
-// Toggle Nav Button
+import { toggleNav } from "./utilities.js";
 
-const hamButton = document.querySelector("#hamburgerButton");
-const nav = document.querySelector("nav");
-
-hamButton.addEventListener("click", () => {
-    nav.classList.toggle("open");
-    hamButton.classList.toggle("open");
-})
+toggleNav();
 
 
 // Get User info

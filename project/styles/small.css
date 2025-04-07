@@ -122,10 +122,17 @@ nav a {
     color: white;
     font-size: 30px;
     padding: 10px;
+    margin: 2px;
     text-align: center;
 }
 
 nav a:hover {
+    background-color: var(--emerald);
+    color: black;
+    border-bottom: 5px solid var(--white);
+}
+
+.active {
     background-color: var(--emerald);
     color: black;
     border-bottom: 5px solid var(--white);
