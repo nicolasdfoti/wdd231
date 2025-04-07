@@ -170,7 +170,7 @@ nav a:hover {
     z-index: 0;
 }
 
-.hero-div button {
+.btn {
     position: absolute;
     bottom: 30px;
     right: 30px;
@@ -181,10 +181,12 @@ nav a:hover {
     font-family: var(--teko);
     font-size: 30px;
     z-index: 1;
+    text-decoration: none;
+    color: var(--castleton-green);
     transition: transform 0.3s ease;
 }
 
-.hero-div button:hover {
+.btn:hover {
     transform: scale(1.1);
 }
 
